@@ -1,26 +1,3 @@
-//════════════════════════════//
-//If you want to recode, reupload
-//or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Cheems Bot MD
-//Thank you to Lord Buddha, Family and Myself
-//════════════════════════════//
-//recode kar ke youtube pe upload kar rhe hai ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
-//════════════════════════════//
-//If you recode and uploading on your channel
-//or copy pasting the codes in ur script, 
-//i give permission to do as long as you
-//put Xeons youtube channel link in the video
-//description and tag me on githuh repo, 
-//thank you🦄
-//════════════════════════════//
-
 require('./settings')
 const { default: XeonBotIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
@@ -187,7 +164,7 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Bem-vindo(a) 💐'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'Bem-vindo(a)'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -202,7 +179,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `${ownername}`,
-body: `Don't forget to read group description`,
+body: `Não se esqueça de ler a descrição do grupo!`,
 mediaType:2,
 thumbnail: XeonWlcm,
 sourceUrl: `${websitex}`,
@@ -231,7 +208,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'Adeus 🥀'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: 'Adeus'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -246,7 +223,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `${ownername}`,
-body: `Bye! my friend, take care.`,
+body: `Tchau! amigo, se cuida.`,
 mediaType:2,
 thumbnail: XeonLft,
 sourceUrl: `${websitex}`,
@@ -332,14 +309,14 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         const { connection, lastDisconnect } = update	    
         if (connection === 'close') {
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode
-            if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); XeonBotInc.logout(); }
-            else if (reason === DisconnectReason.connectionClosed) { console.log("🦄Conexão fechada, reconectando...."); startXeonBotInc(); }
-            else if (reason === DisconnectReason.connectionLost) { console.log("🦄Conexão perdida do servidor, reconectando..."); startXeonBotInc(); }
-            else if (reason === DisconnectReason.connectionReplaced) { console.log("🦄Conexão substituída, outra nova sessão aberta, feche a sessão atual primeiro"); XeonBotInc.logout(); }
-            else if (reason === DisconnectReason.loggedOut) { console.log(`🦄Dispositivo desconectado, verifique novamente e execute.`); XeonBotInc.logout(); }
-            else if (reason === DisconnectReason.restartRequired) { console.log("🦄Reinicialização necessária, reiniciando..."); startXeonBotInc(); }
-            else if (reason === DisconnectReason.timedOut) { console.log("🦄A conexão expirou, reconectando..."); startXeonBotInc(); }
-            else XeonBotInc.end(`🦄Razão de desconexão desconhecida: ${reason}|${connection}`)
+            if (reason === DisconnectReason.badSession) { console.log(`💧Arquivo de sessão inválido, exclua a sessão e verifique novamente`); XeonBotInc.logout(); }
+            else if (reason === DisconnectReason.connectionClosed) { console.log("💧Conexão fechada, reconectando...."); startXeonBotInc(); }
+            else if (reason === DisconnectReason.connectionLost) { console.log("💧Conexão perdida do servidor, reconectando..."); startXeonBotInc(); }
+            else if (reason === DisconnectReason.connectionReplaced) { console.log("💧Conexão substituída, outra nova sessão aberta, feche a sessão atual primeiro"); XeonBotInc.logout(); }
+            else if (reason === DisconnectReason.loggedOut) { console.log(`💧Dispositivo desconectado, verifique novamente e execute.`); XeonBotInc.logout(); }
+            else if (reason === DisconnectReason.restartRequired) { console.log("💧Reinicialização necessária, reiniciando..."); startXeonBotInc(); }
+            else if (reason === DisconnectReason.timedOut) { console.log("💧A conexão expirou, reconectando..."); startXeonBotInc(); }
+            else XeonBotInc.end(`💧Razão de desconexão desconhecida: ${reason}|${connection}`)
         }
         console.log('Conectado...', update)
     })

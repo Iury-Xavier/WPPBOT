@@ -1,35 +1,10 @@
-//════════════════════════════//
-//If you want to recode, reupload
-//or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Cheems Bot MD
-//Thank you to Lord Buddha, Family and Myself
-//════════════════════════════//
-//recode kar ke youtube pe upload kar rhe hai ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
-//════════════════════════════//
-//If you recode and uploading on your channel
-//or copy pasting the codes in ur script, 
-//i give permission to do as long as you
-//put Xeons youtube channel link in the video
-//description and tag me on githuh repo, 
-//thank you🦄
-//════════════════════════════//
-
 const fs = require('fs')
 const chalk = require('chalk')
 
-//Api Website\\
 global.APIs = {
 	zenz: 'https://zenzapis.xyz',
 }
 
-//Api Key\\
 global.APIKeys = {
 	'https://zenzapis.xyz': '5e4ccb6901',
 }
@@ -66,7 +41,7 @@ global.ownertag = '553288416873' //ur tag number
 global.botname = '𝗔𝗴𝘂𝗮 𝗕𝗢𝗧' //ur bot name
 global.linkz = "[...]" //your theme url which will be displayed on whatsapp
 global.websitex = "[...]" //ur website to be displayed
-global.botscript = 'https://github.com/Iury-Xavier/BotWpp' //script link
+global.botscript = 'https://github.com/Iury-Xavier/WPPBOT' //script link
 global.reactmoji = "💧" //ur menu react emoji
 global.themeemoji = "💧" //ur theme emoji
 global.packname = "𝗔𝗴𝘂𝗮 [𝗦𝘁𝗶𝗰𝗸𝗲𝗿𝘀]" //ur sticker watermark packname
@@ -101,7 +76,7 @@ global.ntilink = []
 
 //omther
 global.sessionName = 'session'
-global.antitags = true
+global.antitags = false
 global.prefa = ['#']
 global.sp = '⭔'
 global.mess = {
