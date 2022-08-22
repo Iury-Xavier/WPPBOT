@@ -4399,16 +4399,6 @@ case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite'
 						XeonBotInc.sendImageAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
 					})
 					break
-case 'shopee':
-    if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-    if (!text) return reply(`Exemplo : ${prefix + command} text`)
-					axios.get(`https://zenzapis.xyz/webzone/shopee?query=${text}&apikey=5e4ccb6901`)
-					.then(({data}) => {
-						XeonBotInc.sendImageAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
-					})
-					break
-    
 case 'waifu': case 'loli':
 					   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
